@@ -1,4 +1,5 @@
 #include "main.h"
+
 /**
  * _atoi -Converts a string to an integer.
  * @s: The string to be converted
@@ -14,7 +15,7 @@ int _atoi(char *s)
 
 	for (i = 0; *(s + i) != '\0'; i++)
 	{
-		if (*(s + 1) == '-')
+		if (*(s + i) == '-')
 		{
 			k = k * -1;
 		}
