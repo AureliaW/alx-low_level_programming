@@ -2,7 +2,7 @@
 
 /**
  * malloc_checked - allocates memory and retuurns
- * a pointer
+ * 			a pointer
  *
  * @b: argument
  *
@@ -11,7 +11,7 @@
 
 void *malloc_checked(unsigned int b)
 {
-	int *i
+	int *i;
 
 	i = malloc(b);
 	if (i == NULL)
