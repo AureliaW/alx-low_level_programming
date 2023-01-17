@@ -20,9 +20,9 @@ dog_t *new_dog(char *name, float age, char *owner)
 	dog2 = malloc(sizeof(dog_t));
 
 	if (dog2 == NULL)
-		return (NULL)
+		return (NULL);
 
-	dog2->name = malloc(sizeof(char) * _strlen(name) = 1);
+	dog2->name = malloc(sizeof(char) * _strlen(name) + 1);
 
 	if (dog2->name == NULL)
 	{
@@ -60,7 +60,7 @@ int _strlen(char *s)
 	int i;
 
 	i = 0;
-	while (s[i] != '\0'
+	while (s[i] != '\0')
 			i++;
 	return (i);
 }
@@ -72,7 +72,6 @@ int _strlen(char *s)
  * @src: second argument
  * Return: returns dest if successful
  */
-
 char *_strcpy(char *dest, char *src)
 {
 	int i;
